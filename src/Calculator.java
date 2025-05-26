@@ -8,6 +8,9 @@ public class Calculator {
     //todo: 3. Умножение двух чисел
     //todo: 4. Деление двух чисел (с проверкой деления на ноль)
     //todo: 5. Возведение в степень Болеев Руслан
+    public double power(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
     //todo: 6. Квадратный корень числа Егор Дюкин
     //todo: 7. Процент от числа
     //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков

@@ -5,22 +5,35 @@ public class Calculator {
 
     //todo: 1. Сложение двух чисел
     //todo: 2. Вычитание двух чисел
-    //todo: 3. Умножение двух чисел
-    //todo: 4. Деление двух чисел (с проверкой деления на ноль)
+    //todo: 3. Умножение двух чисел Дмитрий Портнов
+    public double multiplication(double firstNumber, double secondNumber) {
+        return firstNumber * secondNumber;
+    }
+
+    //todo: 4. Деление двух чисел (с проверкой деления на ноль) Дмитрий Портнов
+    public void division(double divisible, double divider) {
+        if (divider != 0) {
+            System.out.println(divisible / divider);
+        } else {
+            System.out.println("ILLEGAL!!");
+        }
+    }
+
     //todo: 5. Возведение в степень Болеев Руслан
     public double power(double base, double exponent) {
         return Math.pow(base, exponent);
     }
+
     //todo: 6. Квадратный корень числа Егор Дюкин
     //todo: 7. Процент от числа
     //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков, a.k.a Miracle-Masterpiece
-	public int factorial(int n) {
-		if (n < 0)
-			throw new IllegalArgumentException("n must be >= 0");
-		if (n == 0 || n == 1)
-			return 1;
-		return n * factorial(n - 1);
-	}
+    public int factorial(int n) {
+        if (n < 0)
+            throw new IllegalArgumentException("n must be >= 0");
+        if (n == 0 || n == 1)
+            return 1;
+        return n * factorial(n - 1);
+    }
     //todo: 9. Остаток от деления (деление по модулю)
     //todo: 10. Максимум из двух чисел Виктор Кулаков
     //todo: 11. Минимум из двух чисел

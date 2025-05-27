@@ -13,7 +13,14 @@ public class Calculator {
     }
     //todo: 6. Квадратный корень числа Егор Дюкин
     //todo: 7. Процент от числа
-    //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков
+    //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков, a.k.a Miracle-Masterpiece
+	public int factorial(int n) {
+		if (n < 0)
+			throw new IllegalArgumentException("n must be >= 0");
+		if (n == 0 || n == 1)
+			return 1;
+		return n * factorial(n - 1);
+	}
     //todo: 9. Остаток от деления (деление по модулю)
     //todo: 10. Максимум из двух чисел Виктор Кулаков
     //todo: 11. Минимум из двух чисел

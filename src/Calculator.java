@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Calculator {
     //todo: Создание СТАТИЧЕСКИХ методов считающих
     // какие-либо функции обычного калькулятора
@@ -47,4 +50,18 @@ public class Calculator {
     //todo: 14. Округление числа до N знаков после запятой (проверка на отрицательность N с выбрасыванием исключения)
     //todo: 15. Генерация случайного числа в заданном диапазоне (проверка на разницу мин макс с выбрасыванием исключения) Андрей Вожегов
 
+    //TODO 15:
+    public static void randomNumber(int a, int b) {
+        try {
+            if (a >= b) {
+                throw new IncorrectNumberOrder("The first number cannot be greater than or equal to the second number");
+            }
+            Random random = new Random();
+            int randomNumber = random.nextInt(b - a + 1) + a;
+            System.out.println("Случайное число в диапазоне от " +
+                    a + " до " + b + " = " + randomNumber);
+        } catch (IncorrectNumberOrder incorrectNumberOrder) {
+            System.out.println("Error! " + incorrectNumberOrder.getMessage());
+        }
+    }
 }

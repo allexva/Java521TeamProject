@@ -23,11 +23,17 @@ public class Calculator {
     //todo: 15. Генерация случайного числа в заданном диапазоне (проверка на разницу мин макс с выбрасыванием исключения) Андрей Вожегов
 
     //TODO 15:
-    public static int randomNumber(int a, int b) throws IncorrectNumberOrder {
-        if (a >= b) {
-            throw new IncorrectNumberOrder("The first number cannot be greater than or equal to the second number");
+    public static void randomNumber(int a, int b) {
+        try {
+            if (a >= b) {
+                throw new IncorrectNumberOrder("The first number cannot be greater than or equal to the second number");
+            }
+            Random random = new Random();
+            int randomNumber = random.nextInt(b - a + 1) + a;
+            System.out.println("Случайное число в диапазоне от " +
+                    a + " до " + b + " = " + randomNumber);
+        } catch (IncorrectNumberOrder incorrectNumberOrder) {
+            System.out.println("Error! " + incorrectNumberOrder.getMessage());
         }
-        Random random = new Random();
-        return random.nextInt(b - a + 1) + a;
     }
 }

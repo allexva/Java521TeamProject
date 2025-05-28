@@ -22,7 +22,13 @@ public class Calculator {
 		return n * factorial(n - 1);
 	}
     //todo: 9. Остаток от деления (деление по модулю)
-    //todo: 10. Максимум из двух чисел Виктор Кулаков
+    //todo: 10. Максимум из двух чисел Виктор Кулаков, Vint
+	public int findBigger(int a, int b) {
+		if (a == b) {
+			throw new IllegalArgumentException("a must not equal b");
+		}
+		return Math.max(a, b);
+	}
     //todo: 11. Минимум из двух чисел
     //todo: 12. Абсолютное значение числа (число по модулю)
     //todo: 13. Логарифм по основанию 10 (проверка на отрицательность с выбрасыванием исключения) Елена Коптева

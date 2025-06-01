@@ -26,6 +26,12 @@ public class Calculator {
     }
 
     //todo: 6. Квадратный корень числа Егор Дюкин
+    public static double square(double n) {
+        if (n < 0)
+            throw new IllegalArgumentException("n must be >= 0");
+        return Math.sqrt(n);
+    }
+
     //todo: 7. Процент от числа Валерия Смирнова
     //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков, a.k.a Miracle-Masterpiece
     public static int factorial(int n) {
@@ -35,14 +41,15 @@ public class Calculator {
             return 1;
         return n * factorial(n - 1);
     }
+
     //todo: 9. Остаток от деления (деление по модулю)
     //todo: 10. Максимум из двух чисел Виктор Кулаков, Vint
-	public static int findBigger(int a, int b) {
-		if (a == b) {
-			throw new IllegalArgumentException("a must not equal b");
-		}
-		return Math.max(a, b);
-	}
+    public static int findBigger(int a, int b) {
+        if (a == b) {
+            throw new IllegalArgumentException("a must not equal b");
+        }
+        return Math.max(a, b);
+    }
     //todo: 11. Минимум из двух чисел Вячеслав Коликов
     //todo: 12. Абсолютное значение числа (число по модулю) Алексей Слепов
     //todo: 13. Логарифм по основанию 10 (проверка на отрицательность с выбрасыванием исключения) Елена Коптева

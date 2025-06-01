@@ -29,7 +29,7 @@ public class Calculator {
     public static double square(double n) {
         if (n < 0)
             throw new IllegalArgumentException("n must be >= 0");
-        return Math.sqrt(n);
+        return Math.sqrt(n);}
 
         //todo: 7. Процент от числа Валерия Смирнова
         //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков, a.k.a Miracle-Masterpiece

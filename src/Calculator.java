@@ -33,6 +33,13 @@ public class Calculator {
     }
 
     //todo: 7. Процент от числа Валерия Смирнова
+    public static double calculatePercentage(double part, double total) {
+        if (total == 0) {
+            throw new IllegalArgumentException("Total must be > 0");
+        }
+        return (part / total) * 100;
+    }
+
     //todo: 8. Факториал числа (рекурсивно или итеративно) Илья Сырков, a.k.a Miracle-Masterpiece
     public static int factorial(int n) {
         if (n < 0)

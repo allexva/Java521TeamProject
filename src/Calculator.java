@@ -58,6 +58,12 @@ public class Calculator {
         return Math.max(a, b);
     }
     //todo: 11. Минимум из двух чисел Вячеслав Коликов
+    public static int findMinimum(int a, int b) {
+        if (a == b) {
+            throw new IllegalArgumentException("a must not equal b");
+        }
+        return Math.min(a, b);
+    }
     //todo: 12. Абсолютное значение числа (число по модулю) Алексей Слепов
     //todo: 13. Логарифм по основанию 10 (проверка на отрицательность с выбрасыванием исключения) Елена Коптева
     //todo: 14. Округление числа до N знаков после запятой (проверка на отрицательность N с выбрасыванием исключения) Валерий Баранов

@@ -65,6 +65,9 @@ public class Calculator {
         return Math.min(a, b);
     }
     //todo: 12. Абсолютное значение числа (число по модулю) Алексей Слепов
+    public static double absoluteValueOfNumber(double number) {
+         return number < 0 ? -number : number;
+    }
     //todo: 13. Логарифм по основанию 10 (проверка на отрицательность с выбрасыванием исключения) Елена Коптева
     //todo: 14. Округление числа до N знаков после запятой (проверка на отрицательность N с выбрасыванием исключения) Баранов Валерий
 	public int round(float n) {
